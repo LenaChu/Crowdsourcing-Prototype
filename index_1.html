@@ -22,89 +22,255 @@
             </section>
             <hr>
             <section class="survey">
-                <div class="img-container">
-                    <img alt="38thBlake_Old" class="neiborhood-img" style="width:80%" src="images/Denver/A01_38thBlake_Old.png">
-                </div>
-                <hr>
                 <form name='mturk_form' method='post' id='mturk_form' action='https://workersandbox.mturk.com/mturk/externalSubmit'>
                     <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
-                    <ul>
-                        <li>
-                            <label for="parking-yes">
-                                Would you feel safe to park your car here?
-                                <input id="parking-yes" type='radio' name="parking-binary" required>Yes
-                            </label>
-                            <label for="parking-no">
-                                <input id="parking-no" type='radio' name="parking-binary" required>No
-                            </label>
-                        </li>
-                        <li>
-                            <label for="wallet-yes">
-                                Do you think you’ll get back your wallet if you lose it on this street?
-                                <input id="wallet-yes" type='radio' name="wallet-binary" required>Yes
-                            </label>
-                            <label for="wallet-no">
-                                <input id="wallet-no" type='radio' name="wallet-binary" required>No
-                            </label>
-                        </li>
-                        <li>
-                            <label for="walk-yes">
-                                Do you feel safe if you walk alone on this street at midnight?
-                                <input id="walk-yes" type='radio' name="walk-binary" required>Yes
-                            </label>
-                            <label for="walk-no">
-                                <input id="walk-no" type='radio' name="walk-binary" required>No
-                            </label>
-                        </li>
-                        <li>
-                            <label for="children-yes">
-                                Would you let your children play here?
-                                <input id="children-yes" type='radio' name="walk-binary" required>Yes
-                            </label>
-                            <label for="children-no">
-                                <input id="children-no" type='radio' name="walk-binary" required>No
-                            </label>
-                        </li>
-                        <li>
-                            <label for="house-yes">
-                                Would you buy a house on this street?
-                                <input id="house-yes" type='radio' name="house-binary" required>Yes
-                            </label>
-                            <label for="house-no">
-                                <input id="house-no" type='radio' name="house-binary" required>No
-                            </label>
-                        </li>
-                        <li>
-                            <label for="black-yes">
-                                Do you think this street is located in Black neighborhood?
-                                <input id="black-yes" type='radio' name="black-binary" required>Yes
-                            </label>
-                            <label for="black-no">
-                                <input id="black-no" type='radio' name="black-binary" required>No
-                            </label>
-                        </li>
-                        <li>
-                            <label for="neighbor-yes">
-                                If you live on this street, would you invite your neighbor to come to your house?
-                                <input id="neighbor-yes" type='radio' name="neighbor-binary" required>Yes
-                            </label>
-                            <label for="neighbor-no">
-                                <input id="neighbor-no" type='radio' name="neighbor-binary" required>No
-                            </label>
-                        </li>
-                    </ul>
-                    <label for="city">
-                        In which US city was the images taken?<br>
-                        <input type="text" id="city" required>
-                    </label><br><br>
-                    <label for="characteristic">
-                        What characteristic in the image makes you to choose the above option?<br>
-                        <textarea id="characteristic" name="reason" cols="80" rows="3" required></textarea>
-                    </label><br><br>
-                    <input type="submit" vaule="Submit">
+                    <div id="subpage1" style="display:block">
+                        <div class="img-container">
+                            <img alt="38thBlake_Old" class="neiborhood-img" style="width:80%" src="images/Denver/A01_38thBlake_Old.png">
+                        </div>
+                        <hr>
+                        <ul>
+                                <li>
+                                    <label for="parking-yes-1">
+                                        Would you feel safe to park your car here?
+                                        <input id="parking-yes-1" type='radio' name="parking-binary-1" required>Yes
+                                    </label>
+                                    <label for="parking-no-1">
+                                        <input id="parking-no-1" type='radio' name="parking-binary-1" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="wallet-yes-1">
+                                        Do you think you’ll get back your wallet if you lose it on this street?
+                                        <input id="wallet-yes-1" type='radio' name="wallet-binary-1" required>Yes
+                                    </label>
+                                    <label for="wallet-no-1">
+                                        <input id="wallet-no-1" type='radio' name="wallet-binary-1" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="walk-yes-1">
+                                        Do you feel safe if you walk alone on this street at midnight?
+                                        <input id="walk-yes-1" type='radio' name="walk-binary-1" required>Yes
+                                    </label>
+                                    <label for="walk-no-1">
+                                        <input id="walk-no-1" type='radio' name="walk-binary-1" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="children-yes-1">
+                                        Would you let your children play here?
+                                        <input id="children-yes-1" type='radio' name="children-binary-1" required>Yes
+                                    </label>
+                                    <label for="children-no-1">
+                                        <input id="children-no-1" type='radio' name="children-binary-1" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="house-yes-1">
+                                        Would you buy a house on this street?
+                                        <input id="house-yes-1" type='radio' name="house-binary-1" required>Yes
+                                    </label>
+                                    <label for="house-no-1">
+                                        <input id="house-no-1" type='radio' name="house-binary-1" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="black-yes-1">
+                                        Do you think this street is located in Black neighborhood?
+                                        <input id="black-yes-1" type='radio' name="black-binary-1" required>Yes
+                                    </label>
+                                    <label for="black-no-1">
+                                        <input id="black-no-1" type='radio' name="black-binary-1" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="neighbor-yes-1">
+                                        If you live on this street, would you invite your neighbor to come to your house?
+                                        <input id="neighbor-yes-1" type='radio' name="neighbor-binary-1" required>Yes
+                                    </label>
+                                    <label for="neighbor-no-1">
+                                        <input id="neighbor-no-1" type='radio' name="neighbor-binary-1" required>No
+                                    </label>
+                                </li>
+                            </ul>
+                            <label for="city-1">
+                                In which US city was the images taken?<br>
+                                <input type="text" id="city-1" name="city-text-1" required>
+                            </label><br><br>
+                            <label for="characteristic-1">
+                                What characteristic in the image makes you to choose the above option?<br>
+                                <textarea id="characteristic-1" name="reason-text-1" cols="80" rows="3" required></textarea>
+                            </label><br><br>
+                            <button onclick="openSubpage2()">Next</button>
+                    </div>
+                    <div id="subpage2" style="display: none">
+                        <div class="img-container">
+                            <img alt="38thBlake_Old" class="neiborhood-img" style="width:80%" src="images/Denver/A02_40thColorado_New.png">
+                        </div>
+                        <hr>
+                        <ul>
+                                <li>
+                                    <label for="parking-yes-2">
+                                        Would you feel safe to park your car here?
+                                        <input id="parking-yes-2" type='radio' name="parking-binary-2" required>Yes
+                                    </label>
+                                    <label for="parking-no-2">
+                                        <input id="parking-no-2" type='radio' name="parking-binary-2" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="wallet-yes-2">
+                                        Do you think you’ll get back your wallet if you lose it on this street?
+                                        <input id="wallet-yes-2" type='radio' name="wallet-binary-2" required>Yes
+                                    </label>
+                                    <label for="wallet-no-2">
+                                        <input id="wallet-no-2" type='radio' name="wallet-binary-2" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="walk-yes-2">
+                                        Do you feel safe if you walk alone on this street at midnight?
+                                        <input id="walk-yes-2" type='radio' name="walk-binary-2" required>Yes
+                                    </label>
+                                    <label for="walk-no-2">
+                                        <input id="walk-no-2" type='radio' name="walk-binary-2" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="children-yes-2">
+                                        Would you let your children play here?
+                                        <input id="children-yes-2" type='radio' name="children-binary-2" required>Yes
+                                    </label>
+                                    <label for="children-no-2">
+                                        <input id="children-no-2" type='radio' name="children-binary-2" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="house-yes-2">
+                                        Would you buy a house on this street?
+                                        <input id="house-yes-2" type='radio' name="house-binary-2" required>Yes
+                                    </label>
+                                    <label for="house-no-2">
+                                        <input id="house-no-2" type='radio' name="house-binary-2" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="black-yes-2">
+                                        Do you think this street is located in Black neighborhood?
+                                        <input id="black-yes-2" type='radio' name="black-binary-2" required>Yes
+                                    </label>
+                                    <label for="black-no-2">
+                                        <input id="black-no-2" type='radio' name="black-binary-2" required>No
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="neighbor-yes-2">
+                                        If you live on this street, would you invite your neighbor to come to your house?
+                                        <input id="neighbor-yes-2" type='radio' name="neighbor-binary-2" required>Yes
+                                    </label>
+                                    <label for="neighbor-no-2">
+                                        <input id="neighbor-no-2" type='radio' name="neighbor-binary-2" required>No
+                                    </label>
+                                </li>
+                            </ul>
+                            <label for="city-2">
+                                In which US city was the images taken?<br>
+                                <input type="text" id="city-2" name="city-text-2" required>
+                            </label><br><br>
+                            <label for="characteristic-2">
+                                What characteristic in the image makes you to choose the above option?<br>
+                                <textarea id="characteristic-2"  name="reason-text-2" cols="80" rows="3" required></textarea>
+                            </label><br><br>
+                            <button onclick="backSubpage1()">Back</button>
+                            <button onclick="openSubpage3()">Next</button>
+                    </div>
+                    <div id="subpage3" style="display: none">
+                        <div class="img-container-pair">
+                            <img alt="38thBlake_Old" class="neiborhood-img" id="neiborhood-old" style="width:50%" src="images/Denver/A01_38thBlake_Old.png">
+                            <img alt="38thBlake_New" class="neiborhood-img" id="neiborhood-new"style="width:50%" src="images/Denver/A02_40thColorado_New.png">
+                        </div><hr>
+                        <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+                        <ul>
+                            <li>
+                                <label for="parking-left">
+                                    Which street do you think you will park your car?
+                                    <input id="parking-left" type='radio' name="parking-binary-3" required>Left
+                                </label>
+                                <label for="parking-right">
+                                    <input id="parking-right" type='radio' name="parking-binary-3" required>Right
+                                </label>
+                            </li>
+                            <li>
+                                <label for="wallet-left">
+                                    Which street do you think you'll get back your wallet if you lose it?
+                                    <input id="wallet-left" type='radio' name="wallet-binary-3" required>Left
+                                </label>
+                                <label for="wallet-right">
+                                    <input id="wallet-right" type='radio' name="wallet-binary-3" required>Right
+                                </label>
+                            </li>
+                            <li>
+                                <label for="walk-left">
+                                    If you walk alone at midnight, which of the above streets you think is safer?
+                                    <input id="walk-left" type='radio' name="walk-binary-3" required>Left
+                                </label>
+                                <label for="walk-right">
+                                    <input id="walk-right" type='radio' name="walk-binary-3" required>Right
+                                </label>
+                            </li>
+                            <li>
+                                <label for="children-left">
+                                    Which street would you let your children play there?
+                                    <input id="children-left" type='radio' name="children-binary-3" required>Left
+                                </label>
+                                <label for="children-right">
+                                    <input id="children-right" type='radio' name="children-binary-3" required>Right
+                                </label>
+                            </li>
+                            <li>
+                                <label for="house-left">
+                                    If you are going to buy a house on one of the streets, which one is your best choice?
+                                    <input id="house-left" type='radio' name="house-binary-3" required>Left
+                                </label>
+                                <label for="house-right">
+                                    <input id="house--right" type='radio' name="house-binary-3" required>Right
+                                </label>
+                            </li>
+                            <li>
+                                <label for="black-left">
+                                    Which street do you think is located in Black neighborhood?
+                                    <input id="black-left" type='radio' name="black-binary-3" required>Left
+                                </label>
+                                <label for="black-right">
+                                    <input id="black-right" type='radio' name="black-binary-3" required>Right
+                                </label>
+                            </li>
+                            <li>
+                                <label for="neighbor-left">
+                                    In which street would you invite your neighbor to come to your house, if you live on that street?
+                                    <input id="neighbor-left" type='radio' name="neighbor-binary-3" required>Left
+                                </label>
+                                <label for="neighbor-right">
+                                    <input id="neighbor-right" type='radio' name="neighbor-binary-3" required>Right
+                                </label>
+                            </li>
+                        </ul>
+                        <label for="city">
+                            In which US city were the images taken?<br>
+                            <input type="text" id="city" name="city-text-2"  required>
+                        </label><br><br>
+                        <label for="characteristic" >
+                            What characteristic in the images makes you to choose the above option?<br>
+                            <textarea id="characteristic" name="reason-text-3" cols="80" rows="3" required></textarea>
+                        </label><br><br>
+                        <button onclick="backSubpage2()">Back</button>
+                        <input type="submit">
+                    </div>
                 </form>
-                <script src="draw.js"></script>
             </section>
+            <script src="pageFlipper.js"></script>
         </main>
+        
     </body>
 </html>

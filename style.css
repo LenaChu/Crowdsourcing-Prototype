@@ -4,6 +4,7 @@ main{
 }
 .intro{
     text-align: center;
+    margin:50px 0;
 }
 img{
     max-width: 100%;
@@ -28,13 +29,4 @@ img{
 }
 form{
     margin:40px 0;   
-}
-.red{
-    color:red;
-}
-.intro{
-    margin:50px 0;
-}
-.example{
-    margin: 30px 0;
 }

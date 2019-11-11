@@ -10,7 +10,7 @@
         <main>
             <section class="intro">
                     <h1>How do you feel about this neighborhood?</h1>
-                    <p>Looking at the images of a neighborhood, please answer the questions below the images. There is no right or wrong answer for each question.</p>
+                    <p>Looking at the images of a neighborhood, please answer the questions below the images. There is no right or wrong answer for each question. All questions are required to answer.</p>
             </section>
             <hr>
             <section class="survey">
@@ -24,75 +24,75 @@
                         <li>
                             <label for="parking-yes">
                                 Which street do you think you will park your car?
-                                <input id="parking-yes" type='radio' name="parking-binary">Yes
+                                <input id="parking-yes" type='radio' name="parking-binary" required>Yes
                             </label>
                             <label for="parking-no">
-                                <input id="parking-no" type='radio' name="parking-binary">No
+                                <input id="parking-no" type='radio' name="parking-binary" required>No
                             </label>
                         </li>
                         <li>
                             <label for="wallet-yes">
                                 Which street do you think you'll get back your wallet if you lose it?
-                                <input id="wallet-yes" type='radio' name="wallet-binary">Yes
+                                <input id="wallet-yes" type='radio' name="wallet-binary" required>Yes
                             </label>
                             <label for="wallet-no">
-                                <input id="wallet-no" type='radio' name="wallet-binary">No
+                                <input id="wallet-no" type='radio' name="wallet-binary" required>No
                             </label>
                         </li>
                         <li>
                             <label for="walk-yes">
                                 If you walk alone at midnight, which of the above streets you think is safer?
-                                <input id="walk-yes" type='radio' name="walk-binary">Yes
+                                <input id="walk-yes" type='radio' name="walk-binary" required>Yes
                             </label>
                             <label for="walk-no">
-                                <input id="walk-no" type='radio' name="walk-binary">No
+                                <input id="walk-no" type='radio' name="walk-binary" required>No
                             </label>
                         </li>
                         <li>
                             <label for="children-yes">
                                 Which street would you let your children play there?
-                                <input id="children-yes" type='radio' name="walk-binary">Yes
+                                <input id="children-yes" type='radio' name="walk-binary" required>Yes
                             </label>
                             <label for="children-no">
-                                <input id="children-no" type='radio' name="walk-binary">No
+                                <input id="children-no" type='radio' name="walk-binary" required>No
                             </label>
                         </li>
                         <li>
                             <label for="house-yes">
                                 If you are going to buy a house on one of the streets, which one is your best choice?
-                                <input id="house-yes" type='radio' name="house-binary">Yes
+                                <input id="house-yes" type='radio' name="house-binary" required>Yes
                             </label>
                             <label for="house-no">
-                                <input id="house-no" type='radio' name="house-binary">No
+                                <input id="house-no" type='radio' name="house-binary" required>No
                             </label>
                         </li>
                         <li>
                             <label for="black-yes">
                                 Which street do you think is located in Black neighborhood?
-                                <input id="black-yes" type='radio' name="black-binary">Yes
+                                <input id="black-yes" type='radio' name="black-binary" required>Yes
                             </label>
                             <label for="black-no">
-                                <input id="black-no" type='radio' name="black-binary">No
+                                <input id="black-no" type='radio' name="black-binary" required>No
                             </label>
                         </li>
                         <li>
                             <label for="neighbor-yes">
                                 In which street would you invite your neighbor to come to your house, if you live on that street?
-                                <input id="neighbor-yes" type='radio' name="neighbor-binary">Yes
+                                <input id="neighbor-yes" type='radio' name="neighbor-binary" required>Yes
                             </label>
                             <label for="neighbor-no">
-                                <input id="neighbor-no" type='radio' name="neighbor-binary">No
+                                <input id="neighbor-no" type='radio' name="neighbor-binary" required>No
                             </label>
                         </li>
                     </ul>
                     <label for="city">
                         In which US city were the images taken?<br>
-                        <input type="text" id="city">
-                    </label><br>
+                        <input type="text" id="city" required>
+                    </label><br><br>
                     <label for="characteristic" >
                         What characteristic in the images makes you to choose the above option?<br>
-                        <textarea id="characteristic" name="reason" cols="80" rows="3"></textarea>
-                    </label><br>
+                        <textarea id="characteristic" name="reason" cols="80" rows="3" required></textarea>
+                    </label><br><br>
                     <input type="submit" vaule="Submit">
                 </form>
                 <script src="draw.js"></script>

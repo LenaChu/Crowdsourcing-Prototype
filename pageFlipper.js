@@ -11,7 +11,9 @@ function openSubpage2(){
     var e = document.forms["mturk_form"]["house-binary-1"].value;
     var f = document.forms["mturk_form"]["black-binary-1"].value;
     var g = document.forms["mturk_form"]["neighbor-binary-1"].value;
-    if (a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == "", e == null || e == "", f == null || f == "", g == null || g == "") {
+    var h = document.forms["mturk_form"]["city-text-1"].value;
+    var i = document.forms["mturk_form"]["reason-text-1"].value;
+    if (a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == "", e == null || e == "", f == null || f == "", g == null || g == "" , h == null || h == "" , i == null || i == "") {
         alert("Please Fill All Required Field");
         return false;
       }
@@ -32,7 +34,9 @@ function openSubpage3(){
     var e = document.forms["mturk_form"]["house-binary-2"].value;
     var f = document.forms["mturk_form"]["black-binary-2"].value;
     var g = document.forms["mturk_form"]["neighbor-binary-2"].value;
-    if (a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == "", e == null || e == "", f == null || f == "", g == null || g == "") {
+    var h = document.forms["mturk_form"]["city-text-2"].value;
+    var i = document.forms["mturk_form"]["reason-text-2"].value;
+    if (a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == "", e == null || e == "", f == null || f == "", g == null || g == "", h == null || h == "" , i == null || i == "") {
         alert("Please Fill All Required Field");
         return false;
       }

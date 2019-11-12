@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Neiborhood Safety - 1</title>
         <link href="style.css" REL=StyleSheet>
@@ -22,11 +22,12 @@
             </section>
             <hr>
             <section class="survey">
+                <h1>Survey</h1>
                 <form name='mturk_form' method='post' id='mturk_form' action='https://workersandbox.mturk.com/mturk/externalSubmit'>
                     <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
                     <div id="subpage1" style="display:block">
                         <div class="img-container">
-                            <img alt="38thBlake_Old" class="neiborhood-img" style="width:80%" src="images/Denver/A01_38thBlake_Old.png">
+                            <img alt="38thBlake_Old" class="neighborhood-img" id="old-large" style="width:80%" src="">
                         </div>
                         <hr>
                         <ul>
@@ -106,7 +107,7 @@
                     </div>
                     <div id="subpage2" style="display: none">
                         <div class="img-container">
-                            <img alt="38thBlake_Old" class="neiborhood-img" style="width:80%" src="images/Denver/A02_40thColorado_New.png">
+                            <img alt="38thBlake_New" class="neighborhood-img" id="new-large" style="width:80%" src="">
                         </div>
                         <hr>
                         <ul>
@@ -187,10 +188,9 @@
                     </div>
                     <div id="subpage3" style="display: none">
                         <div class="img-container-pair">
-                            <img alt="38thBlake_Old" class="neiborhood-img" id="neiborhood-old" style="width:50%" src="images/Denver/A01_38thBlake_Old.png">
-                            <img alt="38thBlake_New" class="neiborhood-img" id="neiborhood-new"style="width:50%" src="images/Denver/A02_40thColorado_New.png">
+                            <img alt="38thBlake_Old" class="neighborhood-img" id="old-small" style="width:50%" src="">
+                            <img alt="38thBlake_New" class="neighborhood-img" id="new-small" style="width:50%" src="">
                         </div><hr>
-                        <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
                         <ul>
                             <li>
                                 <label for="parking-left">
@@ -234,7 +234,7 @@
                                     <input id="house-left" type='radio' name="house-binary-3" required>Left
                                 </label>
                                 <label for="house-right">
-                                    <input id="house--right" type='radio' name="house-binary-3" required>Right
+                                    <input id="house-right" type='radio' name="house-binary-3" required>Right
                                 </label>
                             </li>
                             <li>
@@ -270,6 +270,7 @@
                 </form>
             </section>
             <script src="pageFlipper.js"></script>
+            <script src="loadImage.js"></script>
         </main>
         
     </body>

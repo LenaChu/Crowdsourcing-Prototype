@@ -5,3 +5,6 @@ document.getElementById("old-large").src = imageValue1;
 document.getElementById("new-large").src = imageValue2;
 document.getElementById("old-small").src = imageValue1;
 document.getElementById("new-small").src = imageValue2;
+
+
+turkSetAssignmentID();  

@@ -27,16 +27,9 @@ img{
 .img-container-pair img{
     display: block;
 }
-#neiborhood-old{
+#old-small{
     margin-right:10px;
 }
-/*
-#subpage2{
-    display:none;
-}
-#subpage3{
-    display:none;
-}*/
 form{
     margin:40px 0;   
 }

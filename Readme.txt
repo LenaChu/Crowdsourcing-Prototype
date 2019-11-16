@@ -1,4 +1,5 @@
-https://lenachu.github.io/Crowdsourcing-Prototype/index.html
+Webpage: https://lenachu.github.io/Crowdsourcing-Prototype/index.html
+*Images will be loaded dynamically when HITs are created.
 
 
 Denver
